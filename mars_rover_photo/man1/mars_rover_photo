@@ -1,0 +1,67 @@
+.\" Manpage for mars_rover_photo"
+.TH mars_rover_photo 1 "2 March 2018" "1.0"
+.SH NAME
+mars_rover_photo \- obtain rover images by file list or date using nasa restful api.
+.SH SYNOPSIS
+.B mars_rover_photo
+.RB \-f
+.IR "<file containing image date list>"
+
+.B mars_rover_photo
+.RB \-d
+.IR "<date of image as [dd-MON-yy]>"
+
+.SH DESCRIPTION
+.B mars_rover_photo
+is used to obtain rover images from the nasa api.
+
+.SH OPTIONS
+.TP
+.B \-f
+File containing the image list.
+.TP
+.B \-d
+date of image as [dd-MON-yy].
+
+.SH NOTES
+.PP
+The output of this program is located in the current directory.
+
+.SH RETURN CODES
+.TP 
+.B 0
+Complete success.
+.TP 
+.B 1
+Invalid option value.
+
+.SH EXAMPLES
+.TP
+mars_rover_photo -f MarsDates.txt    (get all images in file)
+.TP
+mars_rover_photo -d 15-Dec-17 (get image by date)
+.TP
+mars_rover_photo -d  1-Mar-16 (get image by date)
+.TP
+mars_rover_photo -d 22-Feb-15 (get image by date)
+.TP
+mars_rover_photo -d  3-Jul-17 (get image by date)
+.TP
+mars_rover_photo -d  5-Jul-17 (get image by date)
+
+.SH BUILD
+make all
+
+.SH LIBRARIES REQUIRED
+LIBS=-ljsoncpp -lpthread -lcurl
+
+.SH TODO
+.TP
+google test 
+.TP
+deploy as docker container
+.SH AUTHOR
+mars_rover_photo Written by Michael Graf.
+
+Copyright @ 2018 Michael Graf (mikegraf1@gmail.com), All Rights Reserved.
+

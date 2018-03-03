@@ -1,0 +1,38 @@
+mars rover phone by date:
+
+Requirements:
+Please take the following coding challenge and email your GitHub to mhawkes@examsoft.com and Mike.rueckert@nttdata.com when you have completed your work.
+
+Please note they are not looking for an exhaustive design more something to indicate you know how to work with the things they use on a daily basis.   This should work for both front end and back end.
+
+Using the API described here (https://api.nasa.gov/api.html) build a project in GitHub that calls the Mars Rover API and selects a picture on a given day.  The attached .txt file will list the dates the images were captured.   We want your application to download and store each image locally.   
+
+MarsDates.txt:
+15-Dec-17
+1-Mar-16
+22-Feb-15
+3-Jul-17
+5-May-19
+
+Acceptance Criteria
+
+    Please send the link of the GitHub repo as the answer to the question
+    Language choice is up to you
+    We should be able to build it locally after you submit it
+    Include relevant documentation
+    Bonus points for Unit Test, Static Analysis and Performance test. 
+
+Solution:
+  Linux c++ (I do not have a windows box, but will developit to be portable)
+
+  libs: jsoncpp and curl
+
+Build:
+  make
+
+man:
+  make man
+
+clean up:
+  make realclean
+ 
