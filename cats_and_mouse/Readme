@@ -1,0 +1,19 @@
+
+Write a program whereas print Cat A if Cat A catches Mounse C, print
+Cat B if Cat B catches Mouse C, print Mouse C if Cat A and Cat B gets 
+there at the same time, such that the Mouse escapes.
+All three are locat on the x-axis and both cats move at the same velocity.
+
+Read locations on x-axis from the data file
+3
+1 2 3
+1 3 2
+2 5 3
+
+firt line is the number of trials
+then a list of locations of Cat A, Cat B, Mouse C.
+
+output:
+Cat B
+Mouse C
+Cat A
